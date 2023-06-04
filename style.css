@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 382px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.container > div {
+    height: 6.25%;
+    width: 6.25%;
+    position: relative;
+}
+
+.minibox {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.filled {
+    background-color: black;
+}
