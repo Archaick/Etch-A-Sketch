@@ -4,27 +4,72 @@
     padding: 0;
 }
 
+.topContainer {
+    background-color: #F5EFE7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    color: #116A7B;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.topContainer li {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #73BBC9;
+    font-weight: 900;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    height: 382px;
-    width: 600px;
-    border: 1px solid black;
+    height: 464px;
+    width: 720px;
+    box-shadow: 0 0 15px rgba(40, 40, 40, 0.864);
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #4F709C;
+    color: #fff; 
+    box-shadow: 0 5px 5spx rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #868686; /* Change background color on hover */
 }
 
 .container > div {
-    height: 6.25%;
-    width: 6.25%;
+    height: 2%;
+    width: 2%;
     position: relative;
+    border: 1px solid #f0f0f0; /* Set border width and color */
+    border-radius: 10%; /* Apply rounded corners */
+    box-shadow: 0 1px 1px rgb(48, 48, 48);
 }
 
 .minibox {
     width: 50px;
     height: 50px;
-    background-color: gray;
+    background-color: #116A7B;
     border: 1px solid black;
 }
 
 .filled {
-    background-color: black;
+    background-color: #FF0060
 }
