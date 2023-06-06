@@ -1,13 +1,12 @@
 const grid = document.getElementById('container');
 let gridIndex = 0;
 
-while (gridIndex < (50*50)) {
+while (gridIndex < (80*80)) {
     let gridLayer = document.createElement('div');
     gridLayer.classList.add('minibox');
     grid.appendChild(gridLayer);
     gridIndex++;
 }
-
 
 // Find all elements with .minibox class and store in elements variable
 const elements = document.querySelectorAll('.minibox');

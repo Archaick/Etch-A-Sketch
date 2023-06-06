@@ -39,12 +39,13 @@
     background-color: rgba(255, 255, 255, 0.2); /* Add a background color with higher opacity */
     padding: 16px; /* Add padding to the content */
     border-radius: 50%; /* Add rounded corners to the content */
-    backdrop-filter: blur(4px); /* Apply a backdrop filter for a subtle blur effect */
+    backdrop-filter: blur(4px); /* Applied a backdrop filter for a subtle blur effect */
 }
+
 
 .title {
     font-family: system-ui;
-    color: #27374D;
+    color: #F5EFE7;
     font-weight: 900;
     font-size: 38px;
 }
@@ -58,10 +59,10 @@
 .topContainer li {
     list-style: none;
     font-family: system-ui;
-    font-size: 16px;
-    color: #526D82;
+    font-size: 14px;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.348);
+    color: #F5EFE7;
     font-weight: 900;
-    text-shadow: 0 0 1px rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -82,7 +83,7 @@
 }
 
 #reset-button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -99,14 +100,14 @@
 }
 
 .container > div {
-    height: 2%;
-    width: 2%;
+    height: 1.25%;
+    width: 1.25%;
     border: 1px solid #c8c8c800; /* Update the border color */
     border-radius: 10%; /* Apply rounded corners */
 }
 
 .minibox {
-    background-color: #87CBB9;
+    background-color: #F5EFE7;
     border: 0.1px solid black;
 }
 
@@ -124,8 +125,9 @@
 .author p {
     font-family: system-ui;
     font-size: 16px;
-    color: #27374D;
+    color: #F5EFE7;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .github-icon {
