@@ -5,33 +5,60 @@
 }
 
 .topContainer {
-    background-color: #f3eadf;
+    position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 16px;
 }
 
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.8); /* Adjust brightness if needed */
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Add a background color with higher opacity */
+    padding: 16px; /* Add padding to the content */
+    border-radius: 50%; /* Add rounded corners to the content */
+    backdrop-filter: blur(4px); /* Apply a backdrop filter for a subtle blur effect */
+}
+
 .title {
-    font-family: monospace;
+    font-family: system-ui;
     color: #27374D;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 38px;
 }
 
 .topContainer ul {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .topContainer li {
     list-style: none;
-    font-family: monospace;
-    font-size: 18px;
+    font-family: system-ui;
+    font-size: 16px;
     color: #526D82;
     font-weight: 900;
     text-shadow: 0 0 1px rgb(255, 255, 255);
@@ -39,7 +66,7 @@
 }
 
 .emph-w {
-    color: #FF0060;
+    color: #D14D72;
 }
 
 .emph-s {
@@ -51,7 +78,7 @@
     flex-wrap: wrap;
     height: 464px;
     width: 720px;
-    box-shadow: 0 0 15px rgba(40, 40, 40, 0.864);
+    box-shadow: 0 0 15px rgba(40, 40, 40, 0.934);
 }
 
 #reset-button {
@@ -68,49 +95,46 @@
 }
 
 #reset-button:hover {
-    background-color: #27374D; /* Change background color on hover */
+    background-color: #D14D72; /* Change background color on hover */
 }
 
 .container > div {
     height: 2%;
     width: 2%;
-    position: relative;
-    border: 1px solid #f0f0f0; /* Set border width and color */
+    border: 1px solid #c8c8c800; /* Update the border color */
     border-radius: 10%; /* Apply rounded corners */
-    box-shadow: 0 1px 1px rgb(48, 48, 48);
 }
 
 .minibox {
-    width: 50px;
-    height: 50px;
-    background-color: #116A7B;
-    border: 1px solid black;
+    background-color: #87CBB9;
+    border: 0.1px solid black;
 }
 
 .filled {
-    background-color: #FF0060
+    background-color: #D14D72
 }
 
 .author {
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: center;
     gap: 16px;
 }
 
 .author p {
-    font-family: monospace;
+    font-family: system-ui;
     font-size: 16px;
     color: #27374D;
+    text-align: center;
 }
 
-    .github-icon {
-        background-image: url(img/github.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 36px;
-        width: 34px;
-        color: black;
-    }
+.github-icon {
+    background-image: url(img/github.png);
+    color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 34px;
+}
   
   
