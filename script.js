@@ -1,3 +1,8 @@
+// Hero video speed
+const video = document.getElementById('hero');
+video.playbackRate = 0.8;
+
+// Div container manipulation here
 const grid = document.getElementById('container');
 let gridIndex = 0;
 

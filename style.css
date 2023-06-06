@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Delete upwards */
 .topContainer {
     position: relative;
     width: 100vw;
@@ -36,12 +37,11 @@
     justify-content: center;
     gap: 8px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.2); /* Add a background color with higher opacity */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a background color with higher opacity */
     padding: 16px; /* Add padding to the content */
     border-radius: 50%; /* Add rounded corners to the content */
-    backdrop-filter: blur(4px); /* Applied a backdrop filter for a subtle blur effect */
+    backdrop-filter: blur(100px);
 }
-
 
 .title {
     font-family: system-ui;
@@ -59,7 +59,7 @@
 .topContainer li {
     list-style: none;
     font-family: system-ui;
-    font-size: 14px;
+    font-size: 12px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.348);
     color: #F5EFE7;
     font-weight: 900;
@@ -115,6 +115,7 @@
     background-color: #D14D72
 }
 
+
 .author {
     display: flex;
     align-items: center;    
@@ -139,4 +140,11 @@
     width: 34px;
 }
   
+.github-icon {
+    display: inline-block;
+    transition: transform 1s ease;
+}
   
+.github-icon:hover {
+    transform: rotate(360deg);
+}
